@@ -1,14 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Quicklist</title>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <header>
+        <img src="./imagens/logo.png" alt="Logo do Quicklist">
+    </header>
+
+    <main>
+        <section class="adicionar-item">
+            <h1>Compras da semana</h1>
+
+            <div>
+                <input type="text" id="item" placeholder="Adicione um novo item">
+                <button>Adicionar item</button>
+            </div>
+        </section>
+
+        <section class="lista">
+            <div class="item">
+                <div>
+                    <input type="checkbox" id="item-1">
+
+                    <div class="checkbox-customizada">
+                        <img src="./imagens/checked.svg" alt="checked icon">
+                    </div>
+
+                    <label for="item-1">Pão de forma</label>
+                </div>
+
+                <button>
+                    <img src="./imagens/trash-icon.svg" alt="Imagem do lixo">
+                </button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
